@@ -377,7 +377,7 @@ body{padding-top:50px}
 .bhl .fl b{width:96px;flex:none;font-family:var(--font-marker);font-size:11.5px;letter-spacing:.08em;
   text-transform:uppercase;color:var(--mute);font-weight:400}
 .bhl .dbox{background:#fff;border:2px solid var(--ink);border-radius:11px;padding:14px 16px;margin-top:12px;
-  font-size:16px;line-height:1.6;outline:none;min-height:78px;font-weight:600}
+  font-size:16px;line-height:1.6;outline:none;min-height:150px;font-weight:600}
 .bhl .dbox:focus{border-color:var(--accent)}
 .bhl .ahint{font-size:14px;color:var(--mute);margin:11px 0 0;font-weight:700;max-width:64ch}
 .bhl .btn{font:800 15px/1 var(--font-body);border:2px solid var(--ink);border-radius:11px 6px 12px 5px;
@@ -468,10 +468,10 @@ body{padding-top:50px}
       </div>
       <div class="adraft" id="aDraft">
         <div class="fl"><b>To</b> team@ugc-world.com</div>
-        <div class="fl"><b>Subject</b> Creator application &#8212; [your name]</div>
+        <div class="fl"><b>Subject</b> Creator application: [your name]</div>
         <div class="fl"><b>Portfolio</b> your VIP portfolio link, attached automatically</div>
-        <div class="dbox" id="aBody" contenteditable="true">Hi team, I&#8217;d like to be considered for the Cloud9 campaign. [One line on why you fit this brand specifically. The thing you have actually lived, not the skills you have.] I film on my phone, I have a quiet spot to shoot in, and I can get you a first video in 48 hours.</div>
-        <p class="ahint">The bracket is the only part that matters. Everyone can film on a phone, so that is not what gets you picked. Replace it with the real reason this brand is yours, then send.</p>
+        <div class="dbox" id="aBody" contenteditable="true">Hi team,<br><br>I came across the {Campaign Name} campaign and immediately felt like the brand aligns with the kind of authentic, lifestyle-focused content I create. With so many brands competing for attention, relatable creator content is one of the best ways to build trust, showcase real results, and turn viewers into customers.<br><br>One idea I&#8217;d love to create is a 30 second lifestyle testimonial that naturally shows how the product fits into a daily routine. Filmed in my warm authentic style, it would feel genuine, relatable, and visually engaging while highlighting the benefits people care about most.<br><br>As a UGC creator, I specialize in clean, high converting content that feels natural and trustworthy. My videos are designed to perform across both paid and organic channels while helping brands build credibility and drive sales.<br><br>Would you be open to putting me forward for {Campaign Name}?<br><br>Best,<br>{Your Name}</div>
+        <p class="ahint">This is Gloria&#8217;s pitch template from the First Deal Fast Track. Swap {Campaign Name} and {Your Name}, then change the content idea in the second paragraph to something that actually suits that brand. Do not send it as it stands.</p>
         <div class="row" style="margin-top:14px;gap:10px">
           <button class="btn" id="aCopy">Copy email</button>
           <a class="btn g" id="aMail" href="#">Open in mail</a>
@@ -510,7 +510,7 @@ body{padding-top:50px}
     ao.setAttribute('aria-expanded',open);
     ao.innerHTML = open ? 'Hide draft &uarr;' : 'Draft my email &darr;';
   });
-  function body(){return document.getElementById('aBody').innerText.trim();}
+  function body(){return document.getElementById('aBody').innerText.replace(/\n{3,}/g,'\n\n').trim();}
   document.getElementById('aCopy').addEventListener('click',function(){
     navigator.clipboard.writeText('To: team@ugc-world.com\nSubject: Creator application\n\n'+body());
     var el=this; el.textContent='Copied'; setTimeout(function(){el.textContent='Copy email'},1600);
