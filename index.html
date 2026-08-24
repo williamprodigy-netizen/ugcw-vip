@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UGC World VIP: Content + Portfolio Crash Course</title>
+<meta name="description" content="The VIP crash course before your live workshop. World class content principles, and the portfolio fundamentals that land your first paid brand deal.">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+:root{
+  --ink:#211B14; --body:#443C31; --mute:#736855; --line:#E9E3D8;
+  --card:#FAF7F1; --bg:#FFFDF9; --accent:#30A05C; --gold:#B8860B;
+  --hl:#D4BEFF; --blush:#F6E3DA; --red:#D8452B;
+  --font-body:"Nunito","Segoe UI",system-ui,-apple-system,sans-serif;
+  --font-hand:"Caveat","Bradley Hand",cursive;
+  --font-marker:"Permanent Marker","Caveat",cursive;
+  --shadow:4px 5px 0 rgba(33,27,20,0.10);
+  --shadow-lift:7px 8px 0 rgba(33,27,20,0.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--body);
+  font:600 17.5px/1.64 var(--font-body);
+  background-image:linear-gradient(rgba(33,27,20,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(33,27,20,.028) 1px,transparent 1px);
+  background-size:34px 34px;-webkit-font-smoothing:antialiased}
+
+.card{max-width:960px;margin:0 auto;padding:44px 40px;border-bottom:1px solid var(--line);position:relative}
+.card:last-child{border-bottom:none}
+@media(max-width:700px){.card{padding:32px 20px}}
+
+h1{font-size:52px;line-height:1.04;font-weight:900;letter-spacing:-.025em;color:var(--ink)}
+h2{font-size:36px;line-height:1.12;font-weight:900;letter-spacing:-.022em;color:var(--ink);margin-bottom:14px}
+h3{font-size:23px;font-weight:800;color:var(--ink);margin-bottom:8px;letter-spacing:-.015em}
+@media(max-width:700px){h1{font-size:29px;line-height:1.12}h2{font-size:24px}h3{font-size:19px}}
+p{margin-bottom:13px;max-width:64ch}
+p.lead{font-size:20px;color:var(--ink);font-weight:700}
+@media(max-width:700px){p.lead{font-size:18px}}
+strong,b{color:var(--ink);font-weight:750}
+a{color:var(--accent)}
+
+/* part dividers: a full-bleed warm band so the page breathes between halves */
+.part{max-width:none;background:var(--ink);color:#F7F2E8;text-align:center;padding:64px 30px;border:none}
+.part .pn{font-family:var(--font-marker);font-size:15px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--hl);display:block;margin-bottom:12px}
+.part h2{color:#FFFDF9;font-size:52px;margin:0}
+.part .ps{color:#CFC4B2;font-size:19px;margin:14px auto 0;max-width:46ch}
+@media(max-width:700px){.part{padding:44px 22px}.part h2{font-size:32px}.part .ps{font-size:16px}}
+
+.kicker{font-family:var(--font-marker);font-size:20px;color:var(--ink);background:var(--hl);
+  display:inline-block;padding:7px 18px;border-radius:16px 9px 18px 8px;margin:0 auto 20px;transform:rotate(-1deg)}
+@media(max-width:700px){.kicker{font-size:15px;padding:6px 13px;margin-bottom:14px}}
+.hero{text-align:center;padding-top:56px}
+.hero h1{max-width:19ch;margin:0 auto 8px}
+.herosub{font-size:21px;font-weight:700;color:var(--mute);max-width:48ch;margin:16px auto 26px;line-height:1.4}
+@media(max-width:700px){.herosub{font-size:17px}}
+.hero p{margin-left:auto;margin-right:auto;text-align:left;max-width:none;width:min(700px,100%)}
+.hero .chk,.hero .callout{width:min(760px,100%);margin-left:auto;margin-right:auto}
+.video{margin:26px auto 26px;max-width:840px;aspect-ratio:16/9;background:#17130F;border-radius:16px;
+  display:flex;align-items:center;justify-content:center;color:#8C8272;font-size:15px;text-align:center;
+  padding:20px;border:2px solid var(--ink);box-shadow:var(--shadow)}
+
+#toc{background:var(--card);border:2px solid var(--ink);border-radius:18px 11px 20px 10px/10px 20px 11px 18px;
+  box-shadow:var(--shadow);padding:28px 32px;max-width:960px;margin:0 auto}
+#toc h3{margin-bottom:16px}
+#toc ol{list-style:none;counter-reset:t;columns:2;column-gap:36px}
+#toc li{counter-increment:t;margin-bottom:10px;break-inside:avoid}
+#toc a{color:var(--body);text-decoration:none;font-size:15.5px}
+#toc a:hover{color:var(--accent)}
+#toc a::before{content:counter(t) ". ";color:var(--mute)}
+@media(max-width:700px){#toc ol{columns:1}#toc{padding:22px 20px}}
+
+ul.plain{list-style:none;margin:4px 0 14px}
+ul.plain li{padding-left:28px;position:relative;margin-bottom:10px;max-width:64ch}
+ul.plain li::before{content:"";position:absolute;left:0;top:11px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+
+figure{margin:18px 0;border:2px solid var(--ink);box-shadow:var(--shadow);border-radius:12px;overflow:hidden;background:var(--card)}
+figure img{display:block;width:100%;height:auto}
+figcaption{padding:12px 16px;font-size:16px;background:#fff;border-top:1px solid var(--line);line-height:1.5}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:stretch;margin:18px 0}
+.pair figure{margin:0;display:flex;flex-direction:column}
+.pair figure img{height:300px;object-fit:contain;object-position:center;background:var(--card);padding:8px}
+.pair figcaption{flex:1;font-size:15px}
+@media(max-width:700px){.pair{grid-template-columns:1fr}.pair figure img{height:auto}}
+figure img{cursor:zoom-in}
+
+.callout{background:var(--blush);border:2px solid var(--ink);border-left:7px solid var(--accent);
+  border-radius:0 14px 14px 0;padding:22px 26px;margin:22px 0;box-shadow:var(--shadow)}
+.callout p:last-child{margin-bottom:0}
+.callout p{max-width:none}
+
+.subh{font-size:21px;font-weight:850;color:var(--ink);margin:26px 0 10px;letter-spacing:-.015em}
+.subh::before{content:"";display:block;width:44px;height:4px;background:var(--hl);border-radius:99px;margin-bottom:10px}
+
+/* -------- the two prerequisites, as a real checklist -------- */
+.chk{display:grid;gap:12px;margin:20px 0}
+.chkrow{display:flex;gap:15px;align-items:flex-start;background:#fff;border:2px solid var(--ink);
+  border-radius:16px 9px 18px 8px/8px 18px 9px 16px;box-shadow:var(--shadow);padding:18px 22px}
+.chkrow .bx{flex:0 0 auto;width:26px;height:26px;border:2.5px solid var(--accent);border-radius:7px;
+  display:grid;place-items:center;color:var(--accent);font-size:17px;font-weight:900;margin-top:1px}
+.chkrow .ct{font-size:17px;color:var(--ink);font-weight:750}
+.chkrow .cs{font-size:15.5px;color:var(--mute);font-weight:600;margin-top:3px}
+
+/* -------- formats grid -------- */
+.fmts{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:13px;margin:20px 0}
+.fmt{background:var(--card);border:2px solid var(--ink);border-radius:16px 9px 18px 8px/8px 18px 9px 16px;
+  box-shadow:var(--shadow);padding:19px 21px}
+.fmt .fn{font-size:12.5px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:7px}
+.fmt .ft{font-size:18px;font-weight:850;color:var(--ink);letter-spacing:-.01em;line-height:1.25}
+.fmt .fd{font-size:15.5px;color:var(--mute);margin-top:7px;line-height:1.5}
+
+/* -------- fundamentals -------- */
+.funds{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:20px 0}
+.fund{background:#fff;border:2px solid var(--ink);border-radius:14px 8px 16px 7px/7px 16px 8px 14px;
+  box-shadow:var(--shadow);padding:17px 19px}
+.fund .ut{font-size:17px;font-weight:900;color:var(--ink);margin-bottom:5px}
+.fund .ud{font-size:15.5px;color:var(--mute);line-height:1.5}
+
+/* -------- mistake / do instead -------- */
+.mist{border:2px solid var(--ink);border-radius:18px 11px 20px 10px/10px 20px 11px 18px;
+  background:var(--card);box-shadow:var(--shadow);margin:20px 0;overflow:hidden}
+.mrow{display:grid;grid-template-columns:1fr 1fr;gap:0;border-bottom:1px solid var(--line)}
+.mrow:last-child{border-bottom:none}
+.mrow>div{padding:17px 20px}
+.mrow .mx{background:rgba(216,69,43,.045);border-right:1px solid var(--line)}
+.mrow .mo{background:rgba(48,160,92,.05)}
+.mlab{font-size:12px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px}
+.mx .mlab{color:var(--red)} .mo .mlab{color:var(--accent)}
+.mtxt{font-size:16px;line-height:1.5;color:var(--ink);font-weight:650}
+@media(max-width:700px){.mrow{grid-template-columns:1fr}.mrow .mx{border-right:none;border-bottom:1px solid var(--line)}}
+
+/* -------- the three questions -------- */
+.q3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}
+.qq{background:var(--ink);color:#FFFDF9;border-radius:18px 11px 20px 10px/10px 20px 11px 18px;
+  padding:26px 24px;box-shadow:var(--shadow)}
+.qq .qn{font-family:var(--font-marker);font-size:34px;color:var(--hl);line-height:1;margin-bottom:12px}
+.qq .qt{font-size:21px;font-weight:850;letter-spacing:-.015em;line-height:1.25}
+.qq .qd{font-size:15px;color:#C9BEAC;margin-top:9px;line-height:1.5}
+@media(max-width:820px){.q3{grid-template-columns:1fr}}
+
+/* -------- the portfolio rail -------- */
+.prail{position:relative;margin:24px 0 8px;width:min(1220px,calc(100vw - 56px));margin-left:50%;transform:translateX(-50%)}
+@media(max-width:1100px){.prail{width:auto;margin-left:0;transform:none}}
+.prail-track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding:6px 2px 18px;scrollbar-width:thin}
+.pcard{flex:0 0 470px;scroll-snap-align:center;margin:0;border:2.5px solid var(--ink);
+  border-radius:16px;overflow:hidden;background:#fff;box-shadow:var(--shadow-lift);
+  display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:.15s}
+.pcard:hover{transform:translate(-2px,-2px);box-shadow:9px 10px 0 rgba(33,27,20,.14)}
+.pchrome{display:flex;align-items:center;gap:7px;padding:9px 13px;background:#EFEAE1;border-bottom:1.5px solid var(--ink)}
+.pchrome i{width:10px;height:10px;border-radius:50%;background:#C9C1B4;display:block}
+.pchrome .purl{margin-left:8px;font-size:12.5px;color:#6E6455;background:#fff;border-radius:99px;
+  padding:3px 12px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pshot{height:300px;overflow:hidden;position:relative;background:var(--card)}
+.pshot img{width:100%;display:block;cursor:pointer}
+.pshot::after{content:"";position:absolute;left:0;right:0;bottom:0;height:52px;
+  background:linear-gradient(transparent,rgba(255,253,249,.95))}
+.pmeta{padding:17px 20px 19px;flex:1;display:flex;flex-direction:column}
+.pmeta .pname{font-size:20px;font-weight:900;color:var(--ink);letter-spacing:-.015em}
+.pmeta .psteal{font-size:12px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:11px 0 5px}
+.pmeta .pline{font-size:15.5px;color:var(--body);line-height:1.5;flex:1}
+.pmeta .pgo{font-size:14.5px;font-weight:800;color:var(--accent);margin-top:12px}
+@media(max-width:700px){.pcard{flex:0 0 84%}.pshot{height:230px}}
+.railhint{font-size:15px;color:var(--mute);text-align:center;margin:2px 0 6px}
+.prail-prev,.prail-next{position:absolute;top:150px;transform:translateY(-50%);
+  width:46px;height:46px;border-radius:50%;border:2.5px solid var(--ink);background:#fff;color:var(--ink);
+  font-size:22px;cursor:pointer;z-index:3;box-shadow:0 4px 14px rgba(33,27,20,.2);display:grid;place-items:center;font-family:inherit}
+.prail-prev{left:-16px}.prail-next{right:-16px}
+.prail-prev[disabled],.prail-next[disabled]{opacity:.2;cursor:default}
+@media(max-width:900px){.prail-prev,.prail-next{display:none}}
+
+/* -------- creator rail (real people, real niches) -------- */
+.crail{position:relative;margin:20px 0;width:min(1220px,calc(100vw - 56px));margin-left:50%;transform:translateX(-50%)}
+@media(max-width:1100px){.crail{width:auto;margin-left:0;transform:none}}
+.crail-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 16px;scrollbar-width:thin}
+.crail-track figure{flex:0 0 360px;scroll-snap-align:center;margin:0}
+.crail-track img{height:212px;object-fit:contain;background:#fff}
+.crail-track figcaption{font-size:15px;padding:11px 14px}
+@media(max-width:700px){.crail-track figure{flex:0 0 84%}}
+
+/* -------- what all six share -------- */
+.common{border:2px solid var(--ink);border-radius:18px 11px 20px 10px/10px 20px 11px 18px;
+  background:#fff;box-shadow:var(--shadow);padding:8px 24px;margin:20px 0}
+.crow2{display:grid;grid-template-columns:78px 1fr;gap:18px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line)}
+.crow2:last-child{border-bottom:none}
+.cct{font-size:22px;font-weight:900;letter-spacing:-.02em;color:var(--accent);text-align:center;line-height:1.1}
+.crow2.low .cct{color:var(--mute)}
+.cct span{display:block;font-size:11.5px;font-weight:800;letter-spacing:.08em;color:var(--mute);margin-top:2px}
+.ccl{font-size:16.5px;color:var(--ink);font-weight:650;line-height:1.45}
+.ccl em{font-style:normal;color:var(--mute);font-weight:600;display:block;font-size:15px;margin-top:3px}
+
+/* -------- your sections, in order -------- */
+.sects{counter-reset:s;margin:20px 0}
+.sect{counter-increment:s;display:grid;grid-template-columns:52px 1fr;gap:18px;padding:18px 0;border-top:1px solid var(--line)}
+.sect:last-child{border-bottom:1px solid var(--line)}
+.sect::before{content:counter(s);font-size:26px;font-weight:900;color:var(--ink);
+  background:var(--hl);border-radius:14px 8px 16px 7px;width:44px;height:44px;display:grid;place-items:center;letter-spacing:-.02em}
+.sect .st{font-size:19px;font-weight:900;color:var(--ink);letter-spacing:-.015em}
+.sect .sd{font-size:16px;color:var(--body);margin-top:5px;line-height:1.55}
+@media(max-width:700px){.sect{grid-template-columns:38px 1fr;gap:13px}.sect::before{width:34px;height:34px;font-size:20px}}
+
+/* -------- the nevers -------- */
+.rules{background:#FFF6F4;border:2px solid var(--red);border-radius:18px 11px 20px 10px/10px 20px 11px 18px;
+  padding:24px 28px;margin:22px 0;box-shadow:4px 5px 0 rgba(216,69,43,.14)}
+.rules .rh{font-family:var(--font-marker);font-size:17px;color:var(--red);letter-spacing:.03em;margin-bottom:14px}
+.rules ul{list-style:none}
+.rules li{padding-left:30px;position:relative;margin-bottom:11px;font-size:16.5px;color:var(--ink);font-weight:650;line-height:1.5}
+.rules li:last-child{margin-bottom:0}
+.rules li::before{content:"✕";position:absolute;left:0;top:0;color:var(--red);font-weight:900;font-size:15px}
+@media(max-width:700px){.rules{padding:20px 18px}}
+
+/* -------- the six casting questions -------- */
+.cast{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:13px;margin:22px 0}
+.cst{background:var(--card);border:2px solid var(--ink);border-radius:16px 9px 18px 8px/8px 18px 9px 16px;
+  box-shadow:var(--shadow);padding:19px 21px}
+.cst .cn{font-family:var(--font-hand);font-size:30px;color:var(--accent);line-height:1;margin-bottom:6px}
+.cst .ch{font-size:17.5px;font-weight:900;color:var(--ink);letter-spacing:-.01em}
+.cst .cd{font-size:15.5px;color:var(--mute);margin-top:6px;line-height:1.5}
+
+/* -------- big button -------- */
+.bigbtn{display:flex;flex-direction:column;gap:3px;text-decoration:none;margin:20px 0;
+  border:2.5px solid var(--ink);border-radius:16px 9px 18px 8px/8px 18px 9px 16px;
+  background:var(--blush);box-shadow:var(--shadow);padding:22px 26px;position:relative;transition:.15s}
+.bigbtn:hover{background:#fff;transform:translate(-1px,-1px);box-shadow:var(--shadow-lift)}
+.bigbtn .bb-t{font-size:22px;font-weight:900;color:var(--ink);letter-spacing:-.015em}
+.bigbtn .bb-s{font-size:15.5px;color:var(--mute)}
+.bigbtn .bb-go{position:absolute;right:26px;top:50%;transform:translateY(-50%);font-size:15px;font-weight:800;color:var(--accent)}
+@media(max-width:600px){.bigbtn .bb-go{position:static;transform:none;margin-top:8px}}
+
+/* -------- doodle -------- */
+.dgm{border:2.5px solid var(--ink);border-radius:22px 14px 26px 12px/12px 26px 14px 22px;background:#fff;
+  padding:24px 22px 18px;margin:24px 0;box-shadow:var(--shadow)}
+.dgm svg{display:block;width:100%;height:auto}
+.dgm .cap{font-family:var(--font-hand);font-size:23px;color:var(--mute);margin-top:12px;text-align:center}
+
+/* -------- close -------- */
+.card.close{text-align:center;background:var(--card)}
+.card.close p{margin-left:auto;margin-right:auto;max-width:54ch}
+.closeh{font-size:28px;line-height:1.25;max-width:30ch;margin:0 auto 18px;font-weight:900;color:var(--ink);letter-spacing:-.02em}
+@media(max-width:700px){.closeh{font-size:22px}}
+.sig{font-family:var(--font-hand);font-size:40px;color:var(--ink);margin:22px 0 0}
+.card.close p.lead{font-size:27px;font-weight:900;color:var(--ink);letter-spacing:-.02em;line-height:1.3;max-width:26ch;margin:20px auto 0}
+@media(max-width:700px){.card.close p.lead{font-size:22px}}
+
+/* -------- nav rail + lightbox -------- */
+#lb{position:fixed;inset:0;z-index:2147483002;background:rgba(20,16,12,.93);display:none;align-items:center;justify-content:center;padding:26px}
+#lb.on{display:flex}
+#lb img{max-width:96vw;max-height:88vh;width:auto;height:auto;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.5);cursor:zoom-out;object-fit:contain}
+#lb .lbcap{position:absolute;left:0;right:0;bottom:0;padding:16px 22px;color:#fff;font-size:15px;line-height:1.5;text-align:center;background:linear-gradient(transparent,rgba(0,0,0,.75))}
+#lb .lbx{position:absolute;top:16px;right:18px;width:42px;height:42px;border-radius:50%;border:none;background:rgba(255,255,255,.16);color:#fff;font-size:24px;cursor:pointer;font-family:inherit}
+#lb .lbn{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;border:none;background:rgba(255,255,255,.16);color:#fff;font-size:26px;cursor:pointer;font-family:inherit}
+#lb .lbn.p{left:18px}#lb .lbn.n{right:18px}
+
+#topbar{position:fixed;top:0;left:0;right:0;height:50px;background:rgba(255,253,249,.94);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;align-items:center;
+  justify-content:space-between;padding:0 22px;z-index:60}
+#topbar .brand{font-size:12.5px;font-weight:850;letter-spacing:.12em;color:var(--ink);text-transform:uppercase}
+#topbar .prog{font-size:13px;color:var(--mute);font-weight:700}
+body{padding-top:50px}
+@media(max-width:700px){#topbar{padding:0 15px}#topbar .brand{font-size:11px;letter-spacing:.08em}}
+.vwrap{position:relative;width:min(880px,100%);margin:26px auto;aspect-ratio:16/9;border:2.5px solid var(--ink);
+  border-radius:16px;overflow:hidden;box-shadow:var(--shadow-lift);background:#17130F}
+.vwrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+#bar{position:fixed;top:50px;left:0;height:3px;background:var(--accent);width:0;z-index:61;transition:width .1s}
+</style>
+</head>
+<body>
+<div id="topbar"><span class="brand">UGC World &middot; VIP Crash Course</span><span class="prog" id="prog"></span></div>
+<div id="bar"></div>
+
+<section class="card hero" id="s1"><span class="kicker">VIP Crash Course</span><h1>Content + Portfolio: the two things that make up 90% of this industry</h1><p class="herosub">Everything I would do if I were starting from complete zero again, before you ever sit down for the live workshop</p><p>WELCOMEEEE to VIP. I'm soooo happy that you took that first step and invested in yourself, seriously.</p><p>Really quickly before we get into anything, if you're watching this right now, then it should mean two things are already done on your end.</p><p>The first is that you replied yes to the text one of our coaches sent you, and the second is that you filled out the questions on the last page, which is the exact thing my team is using to start building out your portfolio right now.</p><p>So if you've still got either of those two left to do, pause this video really quick and knock them out first. It genuinely takes about five minutes, and it's the only thing we need from you to deliver your portfolio before the workshop.</p><div class="chk"><div class="chkrow"><div class="bx">&#10003;</div><div><div class="ct">Replied YES to the text from your coach</div><div class="cs">One word. That is the whole thing, and it is what opens your file on our side.</div></div></div><div class="chkrow"><div class="bx">&#10003;</div><div><div class="ct">Filled out the portfolio questions on the last page</div><div class="cs">About five minutes. This is the exact thing my team is using to build your portfolio right now.</div></div></div></div></section>
+<section class="card"><div id="toc"><h3>What we cover in this video</h3><ol><li><a href="#s2">What we're going to cover</a></li><li><a href="#s3">Really quick backstory on me</a></li><li><a href="#s4">What UGC actually is</a></li><li><a href="#s5">What brands actually value now</a></li><li><a href="#s6">Why these two things are 90% of it</a></li><li><a href="#s7">Before you make anything, train your eye</a></li><li><a href="#s8">The first three seconds</a></li><li><a href="#s9">The formats brands actually buy</a></li><li><a href="#s10">The fundamentals that make content "brand-ready"</a></li><li><a href="#s11">How to film your sample videos</a></li><li><a href="#s12">Which brands to go after</a></li><li><a href="#s13">Common mistakes going from 0 to 1</a></li><li><a href="#s14">Common mistakes going from 1 to 10</a></li><li><a href="#s15">What your portfolio is actually for</a></li><li><a href="#s16">Six portfolios worth studying</a></li><li><a href="#s17">What all six have in common</a></li><li><a href="#s18">The sections your page needs, in order</a></li><li><a href="#s19">The rules you cannot break</a></li><li><a href="#s20">It starts with one video</a></li><li><a href="#s21">So far, we've covered two things</a></li><li><a href="#s22">What we cover live on the workshop</a></li></ol></div></section>
+<section class="card" id="s2"><h2>What we're going to cover</h2><p>Now, if you've already completed those two steps, here's what we're going to cover right now.</p><p>What I want to do with the time you're giving me here is take basically the last four years of my life as a content creator, everything I got wrong at the start and everything I've since watched work across more than a thousand other creators, and condense all of it into one crash course that you get before you ever sit down for the live workshop.</p><p>These are the exact steps I would take if I were starting from complete zero again, without a portfolio, without an audience, and without any experience creating content for brands.</p><div class="callout"><p>Take notes as you go. Every time a question pops into your head, write it down instead of pushing it away, and bring the list to the workshop.</p></div></section>
+<section class="card" id="s3"><h2>Really quick backstory on me</h2><p>I'm from a small town in Minnesota.</p><p>I worked at Walmart, served tables, and probably worked three to five different jobs from the time I was 15. I was always hustling, and eventually I just got burned out. I felt suffocated doing what I was doing, and I knew there had to be something more than just working a normal 9-to-5 forever.</p><p>I started getting curious about making money online, and I kept seeing girls my age with literally a few hundred followers who had "UGC creator" in their bios everywhere.</p><p>It wasn't influencing. They didn't have huge audiences. They were just creating content for brands and getting paid for it.</p><figure><img src="img/gloria-origin.webp" alt="Small town Minnesota. Walmart, waiting tables, three to five jobs since I was 15." loading="lazy" data-cap="Small town Minnesota. Walmart, waiting tables, three to five jobs since I was 15."><figcaption>Small town Minnesota. Walmart, waiting tables, three to five jobs since I was 15.</figcaption></figure><p>Then I met a local business owner who gave me a shot and let me do a paid trial for his brand.</p><p>One brand deal led to the next.</p><p>And pretty soon, that turned into multiple huge brand partnerships, which allowed me to turn this into a real multiple-six-figure business while traveling the world, which was literally my dream.</p><p>I didn't start with followers or some crazy network.</p><p>I started with my dusty iPhone, with the back camera literally broken, and a burning desire to learn the industry and get better.</p><figure><img src="img/gloria-travel.webp" alt="Four years later. Same skill, different country." loading="lazy" data-cap="Four years later. Same skill, different country."><figcaption>Four years later. Same skill, different country.</figcaption></figure><p>And that's important, because it leads into what UGC actually is.</p></section>
+<section class="card" id="s4"><h2>What UGC actually is</h2><p>If I had to explain UGC in one sentence:</p><p class="lead">Brands need a huge volume of short-form content for their advertising. They need it constantly because creative burns out fast, and they need it to feel like a real person rather than a commercial, which is why they hire everyday people to create it instead of relying on a traditional studio.</p><figure><img src="img/why-brands.webp" alt="What Google returns when you ask why brands hire everyday people instead of influencers." loading="lazy" data-cap="What Google returns when you ask why brands hire everyday people instead of influencers."><figcaption>What Google returns when you ask why brands hire everyday people instead of influencers.</figcaption></figure></section>
+<section class="card" id="s5"><h2>What brands actually value now</h2><p>Now, the part that's genuinely changed, and this is the bit I want you to sit with for a second, is what brands actually value.</p><p>Back in 2020, so much of the game was audience. Brands were paying heavily for follower count and reach, and if you didn't have the numbers, you often weren't even in the conversation.</p><p>Today, the advantage has shifted much more toward skill and the amount of trust a skilled creator can build with the customer.</p><p>And trust me when I say this, because I'm sort of living proof of it.</p><p>I'm still making somewhere between ten and twenty thousand dollars a month right now from brands like Canva and School of Hard Knocks.</p><p>And yes, I have around two hundred thousand followers sitting there now, but not one of those brands has ever cared about that number.</p><p>The proof is that I have never once posted a single piece of that work to my own following.</p><p>Zero.</p><div class="pair"><figure><img src="img/instagram-234k.webp" alt="The following I have now." loading="lazy" data-cap="The following I have now."><figcaption>The following I have now.</figcaption></figure><figure><img src="img/missy-instagram.webp" alt="And Missy, one of our creators, at 641 followers. She makes $12k/m from one brand partnership." loading="lazy" data-cap="And Missy, one of our creators, at 641 followers. She makes $12k/m from one brand partnership."><figcaption>And Missy, one of our creators, at 641 followers. She makes $12k/m from one brand partnership.</figcaption></figure></div><p>What they're paying me for is the content.</p><p>The skill.</p><p>And the trust that content is able to build with their customers.</p><p>So what we're going to go through together in this video are those exact skills on the content creation side, and then the portfolio side, meaning how to put together something that shows a brand, almost immediately, who you are, where you fit, and why they should hire you.</p></section>
+<section class="card" id="s6"><h2>Why these two things are 90% of it</h2><p>On the workshop I'm going to show you the actual numbers behind this, but the short version is that this is a wildly abundant industry right now. Brands have more demand for content than there are trained creators to fill it, and that gap is the whole opportunity . . .</p><p>So as long as you understand how to create good content, and how to put together a good portfolio, that's about 90% of the battle.</p><p>So think of it like this: it's like getting trained at Harvard. You probably will not have to go chasing jobs. You'll have a lot of companies trying to work with you instead.</p><p>And I'm not here to overwhelm you, so let me tell you exactly what this video is and what it isn't.</p><ul class="plain"><li>The content half: how to train your eye, the formats brands actually buy, the fundamentals that make a video brand-ready, and how to film your first sample videos this weekend with products you already own.</li><li>The portfolio half: what a portfolio is actually for, six real six-figure portfolios to study, the sections yours needs, and the rules you cannot break.</li><li>The mistakes: what stops people from going from zero to one, and then from one to ten, as a micro creator.</li></ul><p class="lead">Everything here is yours for the lifetime, so you can pause it, save it, and come back to it whenever you want.</p></section>
+<section class="card part"><span class="pn">Part one</span><h2>Content</h2><p class="ps">How to train your eye, the formats brands actually buy, and how to film your first three samples this weekend.</p></section>
+<section class="card" id="s7"><h2>Before you make anything, train your eye</h2><p>Now, this is the one that nobody talks about, and it's the single highest-leverage hour you can spend this week.</p><p>You cannot cook a dish you have never tasted. And most beginners try to make content before they have ever really watched content, which is why the first videos feel off and nobody can explain why . . .</p><p>So before you film a single thing, go and study 10 ads.</p><div class="subh">How to actually study them</div><ul class="plain"><li>Go to the Meta Ad Library and type in a brand you like. It's free, it's public, and it shows you every ad that brand is currently running with real money behind it. TikTok Creative Center does the same thing. Save 10 ads in the category you want to work in.</li><li>Watch each one three times. Once normally. Once with the sound completely off. And once with your screen face down, listening only.</li><li>You watch it normally to see whether you'd genuinely keep watching, then on mute, because most people scroll with the sound off and the visuals plus the text on screen have to carry the whole thing alone, and then with the screen face down, which is the honest test of whether the words on their own would sell it.</li><li>Then write down five things for every ad: the first line they say, the format, roughly how many cuts are in the first 15 seconds, the moment the product first appears, and how they close it.</li></ul><p>Do that for 10 ads and you will understand more about how this actually works than most people who already call themselves creators.</p><p>You're doing all of this to learn the grammar of it, the same way you learned how a sentence sounds long before you ever sat down to write one. Copying somebody's video is a dead end, and understanding why theirs worked is a skill that travels with you forever . . .</p><div class="callout"><p>If you only do one thing from this entire video before the workshop, make it this. Ten ads, three passes each, five notes each. It takes about 40 minutes and it changes what you see forever.</p></div></section>
+<section class="card" id="s8"><h2>The first three seconds</h2><p>Basically, brands are buying your hook more than they're buying anything else.</p><p>A paid ad lives or dies in the first two seconds, and when a brand is spending real money on distribution, a slow opening is money burning in front of them. Which is why the fastest way to look expensive as a creator is to open well.</p><p>Your hook is three things happening at once: what you say, what's on screen behind you, and the text overlay across the top. All three land in the same second, and all three have to earn the next one.</p><div class="subh">The opening that kills most beginner videos</div><p>"Hey guys, so today I'm going to be talking about . . ."</p><p>That's about two and a half seconds of nothing before anything happens. On organic content you might get away with it. On a paid ad, that's the whole budget gone.</p><div class="subh">Openings that work</div><ul class="plain"><li>Start in the middle of the sentence, like the camera caught you halfway through telling a friend.</li><li>Open on the problem, physically. Show the tangled cable, the sore back, the sink full of dishes.</li><li>Open on the result and work backwards from it.</li><li>Open with the product already in your hand and already doing the thing.</li><li>Open with a real number or a real detail. "I've used the same one of these for five years."</li></ul><p>And the practical move that brands genuinely love: film three different hooks for the same video, and hand all three over. It costs you an extra four minutes, it gives them three things to test, and it makes you the creator they come back to when they need volume.</p></section>
+<section class="card" id="s9"><h2>The formats brands actually buy</h2><p>There are really only a handful of formats that make up almost all paid UGC, and knowing their names is half of it, because a brand brief is going to ask for them by name.</p><div class="fmts"><div class="fmt"><div class="fn">Format 01</div><div class="ft">Talking head</div><div class="fd">You, face to camera, telling the story of the product like you are telling a friend. The one everybody starts with.</div></div><div class="fmt"><div class="fn">Format 02</div><div class="ft">Problem then solution</div><div class="fd">Show the annoying thing happening first, in real life, then show the fix. The highest converting format in almost every category.</div></div><div class="fmt"><div class="fn">Format 03</div><div class="ft">Product demo</div><div class="fd">Hands, close ups, the thing actually working. Very little of you, a lot of the product.</div></div><div class="fmt"><div class="fn">Format 04</div><div class="ft">Unboxing and first impressions</div><div class="fd">Package, open, react, first use. Easy to film, and brands run enormous volumes of it.</div></div><div class="fmt"><div class="fn">Format 05</div><div class="ft">Voiceover b-roll</div><div class="fd">You never appear. You film footage and narrate over the top. The best starting format if being on camera makes you nervous.</div></div><div class="fmt"><div class="fn">Format 06</div><div class="ft">Day in the life / POV</div><div class="fd">The product woven into a real routine. Works beautifully for food, wellness, apps and anything habitual.</div></div><div class="fmt"><div class="fn">Format 07</div><div class="ft">Green screen reaction</div><div class="fd">You react to a screenshot, a review, a comment, a post. Cheap to film and endlessly repeatable.</div></div><div class="fmt"><div class="fn">Format 08</div><div class="ft">Comparison and street style</div><div class="fd">This one against that one, or asking real people. Higher effort, and brands pay accordingly.</div></div></div><p>Most creators can only do one of these, usually talking head, because it's the one they've seen the most.</p><p>If you can do four of them well, you get rebooked, because a brand running ads needs volume and variety more than it needs one perfect video . . .</p><div class="subh">A note on the ones you'd never guess</div><p>Voiceover b-roll is the format almost nobody starts with, and it's the one I'd push you toward if being on camera makes you nervous. You never show your face. You film hands, product, environment, and you narrate it. Brands buy an enormous amount of it, and it's the fastest format to get good at.</p></section>
+<section class="card" id="s10"><h2>The fundamentals that make content "brand-ready"</h2><p>Now, none of this is technically difficult. It's just a lot of small things at once, which is exactly why it feels overwhelming at the start. It's like driving. Mirrors, pedals, indicator, all at the same time, and then three weeks later you're doing every bit of it without thinking about it.</p><div class="funds"><div class="fund"><div class="ut">Light</div><div class="ud">Face the window. Natural light on your face beats any ring light you can buy this week.</div></div><div class="fund"><div class="ut">Sound</div><div class="ud">Get close, film in a room with soft things in it, and stay away from anywhere with an echo.</div></div><div class="fund"><div class="ut">Stability</div><div class="ud">Prop the phone on books or a shelf. A wobbling frame reads as amateur before you say a word.</div></div><div class="fund"><div class="ut">Framing</div><div class="ud">Vertical 9:16, eyes in the top third, and leave breathing room top and bottom for the platform's buttons.</div></div><div class="fund"><div class="ut">Pace</div><div class="ud">A cut every two to three seconds. Cut out every pause, every um, every breath before a sentence.</div></div><div class="fund"><div class="ut">Captions</div><div class="ud">Burn them in. Most of your audience is watching on mute with the phone face down on a desk.</div></div><div class="fund"><div class="ut">Background</div><div class="ud">Clean and real. A lived-in kitchen beats a blank white wall every single time.</div></div><div class="fund"><div class="ut">Delivery</div><div class="ud">Talk to one friend, not to a room. The second you switch into presenter voice, the whole reason they hired you is gone.</div></div></div><div class="subh">The three that fix the most videos</div><ul class="plain"><li>Light. Face the window. That's the whole tip. You do not need a ring light to start, you need to stop filming with the window behind you.</li><li>Sound. Bad audio kills more videos than bad video does. Get close, film in a room with soft things in it, and stay off the balcony.</li><li>Cuts. Every time you pause, take a breath or say "um", cut it out. When there's a cut every two or three seconds, a video that felt slow suddenly feels professional.</li></ul><p class="lead">And the delivery thing that matters more than any of it: talk like you're telling one friend about it, not like you're addressing a room. Brands are paying for content that feels like a real person, so the second you switch into presenter voice, the entire reason they hired you disappears.</p></section>
+<section class="card" id="s11"><h2>How to film your sample videos</h2><p>This is the part that unlocks everything, so read this line twice.</p><p class="lead">You do not need a brand's permission to make content for them.</p><p>Every creator in this industry started by making videos for products nobody paid them to make videos for. It's called spec work, every creative industry does it, and an architect will happily show you a building they designed for a pitch they didn't win.</p><div class="subh">Your first three, this weekend</div><ul class="plain"><li>Go around your house and pick three products you already own and genuinely use. Your bathroom cabinet, your kitchen counter, your gym bag, your car, your desk, your toolbox. That's where they are.</li><li>Pick things you actually use, because you can talk about them for 60 seconds without a script, and that shows on camera in a way you cannot fake.</li><li>Film each one in a different format. One talking head, one product demo, one voiceover b-roll. Three videos, three formats, three categories, and you're done.</li><li>Keep each one under 30 seconds, film the hook three ways, and keep the raw footage.</li><li>Label them honestly on your page as concepts or spec work. Never imply the brand hired you.</li></ul><p>That's a weekend of work, and it's the difference between a page that says "I want to do this" and a page that shows a brand exactly what they'd be buying.</p></section>
+<section class="card" id="s12"><h2>Which brands to go after</h2><p>Now, this is where most people waste months, so let me save you those months.</p><div class="subh">Rule one: go after brands that are already running ads</div><p>If a brand is running paid ads, they already buy content, they already have a budget line for it, and creative burnout is already their problem. You're offering them something they were going to buy this month anyway.</p><p>If they've never run an ad before, you're doing six weeks of educating them first, and it usually ends at $50 . . .</p><p class="lead">You can check this in about ten seconds. Meta Ad Library, type the brand name in, and see whether anything is live. Free, public, no login . . .</p><div class="subh">Rule two: go after the world you already live in</div><p>Your job, your hobby, your health thing, your kids, your car, your faith, your sport. Remember, in "U-GC", "you" are the prize. The reason a brand picks you over someone with ten times your following is that you already look and sound like their customer.</p><div class="crail"><div class="crail-track"><figure><img src="img/creator-jourdan.webp" alt="creator example" loading="lazy" data-cap="Jourdan is a D1 basketball player who films for sports brands between practices."><figcaption>Jourdan is a D1 basketball player who films for sports brands between practices.</figcaption></figure><figure><img src="img/creator-nicole.webp" alt="creator example" loading="lazy" data-cap="Nicole is a musician who films for instrument apps while working on her music."><figcaption>Nicole is a musician who films for instrument apps while working on her music.</figcaption></figure><figure><img src="img/creator-olivia.webp" alt="creator example" loading="lazy" data-cap="Olivia quit a six figure sales job in LA to go full time as a comedian. UGC funds the dream."><figcaption>Olivia quit a six figure sales job in LA to go full time as a comedian. UGC funds the dream.</figcaption></figure><figure><img src="img/creator-brian.webp" alt="creator example" loading="lazy" data-cap="Brian is a huge foodie. Now he gets more free food, and gets paid for it."><figcaption>Brian is a huge foodie. Now he gets more free food, and gets paid for it.</figcaption></figure><figure><img src="img/creator-skylar.webp" alt="creator example" loading="lazy" data-cap="Skylar is a full time model in LA, filming for the brands she already wears."><figcaption>Skylar is a full time model in LA, filming for the brands she already wears.</figcaption></figure></div></div><p class="railhint">Five of our creators. The thing they had before UGC is the thing that got them hired.</p><div class="subh">Rule three: big enough to have money, small enough to reply</div><p>Direct-to-consumer brands, app and software companies, supplements, tools, skincare, home goods, pet, fitness. Companies in that band have real marketing budgets and a human who reads the inbox.</p><div class="subh">What to walk away from</div><ul class="plain"><li>Gifted-only deals where the product is the payment.</li><li>Anyone paying you in "exposure".</li><li>Anything asking you to buy the product first and get reimbursed later.</li><li>The giant legacy brands, at the start. Nike has an agency. They are not hiring you off an email in month one, and chasing them will cost you the months where you could have been building real proof.</li></ul></section>
+<section class="card" id="s13"><h2>Common mistakes going from 0 to 1</h2><p>Getting the first paid deal is a completely different game from scaling, so here are the ones I watch people make over and over.</p><div class="mist"><div class="mrow"><div class="mx"><div class="mlab">The mistake</div><div class="mtxt">Waiting until the portfolio is perfect before pitching anybody.</div></div><div class="mo"><div class="mlab">Do this instead</div><div class="mtxt">Ship it at 80%. A live page you are still improving beats a perfect page nobody has seen.</div></div></div><div class="mrow"><div class="mx"><div class="mlab">The mistake</div><div class="mtxt">Sending four pitches, hearing nothing, and deciding it doesn't work.</div></div><div class="mo"><div class="mlab">Do this instead</div><div class="mtxt">A 1% reply rate is normal and healthy. Four pitches is not a test, it is a rounding error. Send them daily.</div></div></div><div class="mrow"><div class="mx"><div class="mlab">The mistake</div><div class="mtxt">Filming content you personally think looks cool.</div></div><div class="mo"><div class="mlab">Do this instead</div><div class="mtxt">Film for the brand's customer. Ask what their buyer is worried about, then answer that on camera.</div></div></div><div class="mrow"><div class="mx"><div class="mlab">The mistake</div><div class="mtxt">No niche, so there is nothing specific to hire you for.</div></div><div class="mo"><div class="mlab">Do this instead</div><div class="mtxt">Pick three to five categories that already exist in your real life and write them on the page.</div></div></div><div class="mrow"><div class="mx"><div class="mlab">The mistake</div><div class="mtxt">Only having one format, usually talking head.</div></div><div class="mo"><div class="mlab">Do this instead</div><div class="mtxt">Film your three samples in three different formats so a brand can see range in 90 seconds.</div></div></div></div></section>
+<section class="card" id="s14"><h2>Common mistakes going from 1 to 10</h2><p>And once you've got one deal, here's what actually turns it into an income.</p><div class="mist"><div class="mrow"><div class="mx"><div class="mlab">The mistake</div><div class="mtxt">Delivering the video and waiting to be asked for more.</div></div><div class="mo"><div class="mlab">Do this instead</div><div class="mtxt">Send the next three concepts with the delivery. Most retainers start because the creator proposed one.</div></div></div><div class="mrow"><div class="mx"><div class="mlab">The mistake</div><div class="mtxt">Charging one flat price and giving everything away inside it.</div></div><div class="mo"><div class="mlab">Do this instead</div><div class="mtxt">Usage rights, whitelisting, raw files and extra hooks are all separate line items. Ask for them.</div></div></div><div class="mrow"><div class="mx"><div class="mlab">The mistake</div><div class="mtxt">Constantly chasing new brands instead of keeping the ones you have.</div></div><div class="mo"><div class="mlab">Do this instead</div><div class="mtxt">Keeping one client for a year is a fraction of the work of finding twelve. Repeat clients are the whole game.</div></div></div><div class="mrow"><div class="mx"><div class="mlab">The mistake</div><div class="mtxt">Never looking at how the content actually performed.</div></div><div class="mo"><div class="mlab">Do this instead</div><div class="mtxt">Ask for the numbers. Being able to say the second hook held attention 3x longer makes you the creator they plan around.</div></div></div><div class="mrow"><div class="mx"><div class="mlab">The mistake</div><div class="mtxt">Putting everything into one brand and one platform.</div></div><div class="mo"><div class="mlab">Do this instead</div><div class="mtxt">Diversify on purpose. Three brands paying you $1k is a far safer business than one brand paying you $3k.</div></div></div></div><p class="lead">The creators who get to ten thousand a month are usually the ones who kept the same client for a year, while everyone else was busy going out and finding a new one every single month.</p></section>
+<section class="card part"><span class="pn">Part two</span><h2>Portfolio</h2><p class="ps">What the page is really for, six real portfolios to study, the nine sections yours needs, and the rules you cannot break.</p></section>
+<section class="card" id="s15"><h2>What your portfolio is actually for</h2><p>Your portfolio answers three questions, and genuinely that's it:</p><div class="q3"><div class="qq"><div class="qn">1</div><div class="qt">Who are you?</div><div class="qd">Your name, your face, where you are, and the real life thing that makes you believable on this product.</div></div><div class="qq"><div class="qn">2</div><div class="qt">What kind of content do you make?</div><div class="qd">The niches you create for, the formats you film, and examples a brand can watch in ten seconds.</div></div><div class="qq"><div class="qn">3</div><div class="qt">Why should we hire you?</div><div class="qd">The concrete reasons to give you a first test, and one obvious way to contact you.</div></div></div><p>If a brand manager can answer all three of those in about 30 seconds, on their phone, standing in line, your portfolio works. If they can't, it doesn't matter how pretty it is . . .</p><p>So every single decision on that page comes back to those three questions . . . If something on that page answers one of the three, it earns its place. Everything else is decoration.</p></section>
+<section class="card" id="s16"><h2>Six portfolios worth studying</h2><p>Here are six real portfolios from creators making six figures with this. Have a real look through them.</p><p>And please don't get overwhelmed by these, because this is the result of months of work, and for some of these creators, years of it. You're seeing the finished version of something that started exactly where you're starting.</p><p class="railhint">Swipe across, or use the arrows. Every one of these opens the real live site.</p><div class="prail"><button class="prail-prev" aria-label="previous">&#8249;</button><div class="prail-track"><a class="pcard" href="https://rubiecreative.com/" target="_blank" rel="noopener">
+  <div class="pchrome"><i></i><i></i><i></i><span class="purl">rubiecreative.com</span></div>
+  <div class="pshot"><img src="img/port/rubie.webp" alt="Rubie Lapena portfolio" loading="lazy" data-cap="Rubie Lapena &middot; rubiecreative.com"></div>
+  <div class="pmeta"><div class="pname">Rubie Lapena</div>
+    <div class="psteal">What to steal</div><div class="pline">Her day job is the whole pitch. The first line under her name says aesthetic nurse, and instantly you know why a skincare brand hires her over someone with ten times the following. This is the most reusable layout of the six.</div>
+    <div class="pgo">Open the live site &rarr;</div></div>
+</a><a class="pcard" href="https://www.ugcbyannalise.com/" target="_blank" rel="noopener">
+  <div class="pchrome"><i></i><i></i><i></i><span class="purl">ugcbyannalise.com</span></div>
+  <div class="pshot"><img src="img/port/annalise.webp" alt="Annalise Hardman portfolio" loading="lazy" data-cap="Annalise Hardman &middot; ugcbyannalise.com"></div>
+  <div class="pmeta"><div class="pname">Annalise Hardman</div>
+    <div class="psteal">What to steal</div><div class="pline">She sells a named method rather than availability, and the whole page runs on one serif face. Her numbers band sits directly under the hero, so the proof lands before you scroll.</div>
+    <div class="pgo">Open the live site &rarr;</div></div>
+</a><a class="pcard" href="https://lukajadeugc.com/portfolio" target="_blank" rel="noopener">
+  <div class="pchrome"><i></i><i></i><i></i><span class="purl">lukajadeugc.com/portfolio</span></div>
+  <div class="pshot"><img src="img/port/lukajade.webp" alt="Luka Wong portfolio" loading="lazy" data-cap="Luka Wong &middot; lukajadeugc.com/portfolio"></div>
+  <div class="pmeta"><div class="pname">Luka Wong</div>
+    <div class="psteal">What to steal</div><div class="pline">Every card names the format AND the product category, twice over. That double caption is the cheapest credibility on any page here, and it quietly tells a brand she is easy to brief.</div>
+    <div class="pgo">Open the live site &rarr;</div></div>
+</a><a class="pcard" href="https://ugcbybninh.com/" target="_blank" rel="noopener">
+  <div class="pchrome"><i></i><i></i><i></i><span class="purl">ugcbybninh.com</span></div>
+  <div class="pshot"><img src="img/port/bninh.webp" alt="Brian Ninh portfolio" loading="lazy" data-cap="Brian Ninh &middot; ugcbybninh.com"></div>
+  <div class="pmeta"><div class="pname">Brian Ninh</div>
+    <div class="psteal">What to steal</div><div class="pline">A six bullet About Me built on attributes instead of results. It is the single most copyable block in the whole study, because attributes are something you already have on day one.</div>
+    <div class="pgo">Open the live site &rarr;</div></div>
+</a><a class="pcard" href="https://andreas-ugc.com/" target="_blank" rel="noopener">
+  <div class="pchrome"><i></i><i></i><i></i><span class="purl">andreas-ugc.com</span></div>
+  <div class="pshot"><img src="img/port/andreas.webp" alt="Andreas Rauca portfolio" loading="lazy" data-cap="Andreas Rauca &middot; andreas-ugc.com"></div>
+  <div class="pmeta"><div class="pname">Andreas Rauca</div>
+    <div class="psteal">What to steal</div><div class="pline">One opinionated line about AI makes the entire page feel like a person. He also runs a scrolling strip of role words instead of a nav bar, and every card carries a result caption.</div>
+    <div class="pgo">Open the live site &rarr;</div></div>
+</a><a class="pcard" href="https://mayaherring.com/" target="_blank" rel="noopener">
+  <div class="pchrome"><i></i><i></i><i></i><span class="purl">mayaherring.com</span></div>
+  <div class="pshot"><img src="img/port/maya.webp" alt="Maya Herring portfolio" loading="lazy" data-cap="Maya Herring &middot; mayaherring.com"></div>
+  <div class="pmeta"><div class="pname">Maya Herring</div>
+    <div class="psteal">What to steal</div><div class="pline">Niche and format chips so a brand manager finds their own category in about two seconds. Her What's Included list also teaches brands exactly what they are buying.</div>
+    <div class="pgo">Open the live site &rarr;</div></div>
+</a></div><button class="prail-next" aria-label="next">&#8250;</button></div><div class="subh">And this is what a beginner version looks like</div><p>This one is a layout we built and tested for a complete beginner with no past clients, no video work and no brand relationships, using nothing but an application form and a handful of photos. The grey boxes are where his own photos drop in.</p><figure><img src="img/port/mock.webp" alt="A sample beginner layout. Every section is honestly fillable on day one, with zero past work." loading="lazy" data-cap="A sample beginner layout. Every section is honestly fillable on day one, with zero past work."><figcaption>A sample beginner layout. Every section is honestly fillable on day one, with zero past work.</figcaption></figure><a class="bigbtn" href="example-portfolio.html" target="_blank" rel="noopener"><span class="bb-t">Open the example portfolio</span><span class="bb-s">Scroll the whole thing, it's a real page</span><span class="bb-go">Open &rarr;</span></a></section>
+<section class="card" id="s17"><h2>What all six have in common</h2><p>Now, same drill as the content. Don't just look at these and feel behind. Study them.</p><p>Open all six in tabs and hunt for what's the same across all of them, because whatever is the same is the actual rule, and whatever is different is just personal taste.</p><p>Here's what I find every time I do this:</p><div class="common"><div class="crow2"><div class="cct">6<span>of 6</span></div><div class="ccl">Name, one line of positioning and contact details, right at the top. <em>The name is always the biggest thing on the page.</em></div></div><div class="crow2"><div class="cct">6<span>of 6</span></div><div class="ccl">The work is grouped by category, never by date. <em>Category header, row of cards, category header, row of cards.</em></div></div><div class="crow2"><div class="cct">6<span>of 6</span></div><div class="ccl">Vertical 9:16 cards with a caption underneath every single one. <em>The most repeated unit in the entire category.</em></div></div><div class="crow2"><div class="cct">6<span>of 6</span></div><div class="ccl">A plain text email address at the bottom, selectable, not hidden behind a form.</div></div><div class="crow2"><div class="cct">5<span>of 6</span></div><div class="ccl">The niches written out as visible labels or chips.</div></div><div class="crow2"><div class="cct">4<span>of 6</span></div><div class="ccl">Photography treated as its own section, separate from video.</div></div><div class="crow2"><div class="cct">4<span>of 6</span></div><div class="ccl">An About Me block built on real life credibility.</div></div><div class="crow2 low"><div class="cct">3<span>of 6</span></div><div class="ccl">A nav bar. <em>So you do not need one.</em></div></div><div class="crow2 low"><div class="cct">2<span>of 6</span></div><div class="ccl">A single client case study in depth.</div></div><div class="crow2 low"><div class="cct">1<span>of 6</span></div><div class="ccl">Rates or packages, and even she writes price on request. <em>So you definitely do not need rates.</em></div></div></div><p>So the rules are: name huge at the top, one line saying what you do, contact visible immediately, work grouped by category, vertical cards with captions, plain-text email at the bottom.</p><p>And the things you can happily skip: rates, a nav bar, testimonials, a logo wall. Most of these pages don't have them, and the ones that do aren't better for it.</p><div class="subh">The single best move on any of the six</div><p>Look at Rubie's again. The first line under her name says she's an aesthetic nurse.</p><p>And the second you read that, you understand exactly why a skincare brand should hire her over someone with ten times the followers. She has that expertise already, it's verifiable in about four seconds, and it cost her zero videos to earn.</p><p>So your job, your background, your age, the thing you've done for nineteen years, the thing your friends already ask you about, all of that goes in the first line of your page . . . That's the highest-leverage sentence you will write.</p></section>
+<section class="card" id="s18"><h2>The sections your page needs, in order</h2><p>This is the running order. Nine sections, and every one of them is fillable today, with no past clients.</p><div class="sects"><div class="sect"><div><div class="st">The hero</div><div class="sd">Your name set large, one line on what you create and who for, where you are based, and your email. Put your real life credential in that first line. HVAC technician, 19 years. Aesthetic nurse. Mum of three. Native Spanish speaker.</div></div></div><div class="sect"><div><div class="st">Your niches</div><div class="sd">Three to five categories, written out plainly. This is how a brand decides in two seconds whether you are relevant to them.</div></div></div><div class="sect"><div><div class="st">Formats you film</div><div class="sd">Straight from the list earlier. Talking head, problem solution, demo, voiceover b-roll. It tells a brand exactly what they can brief you on.</div></div></div><div class="sect"><div><div class="st">Your samples</div><div class="sd">Your spec videos as 9:16 cards, with a caption under each one naming the product and the format. Mark them clearly as concepts.</div></div></div><div class="sect"><div><div class="st">Why brands should test you</div><div class="sd">Four to six short factual bullets about attributes rather than results. Real gym at home. 24 hour turnaround. Comfortable on camera. Speaks two languages.</div></div></div><div class="sect"><div><div class="st">What I bring to a shoot</div><div class="sd">Your environment, your gear, your turnaround time. A brand paying for a location shoot is very interested in the fact you already have a workshop, a nursery, a truck or a commercial kitchen.</div></div></div><div class="sect"><div><div class="st">Photos</div><div class="sd">Real photos of you, your space, your setup. This is the one section a beginner can always fill honestly, and four of the six swipes treat photography as its own deliverable anyway.</div></div></div><div class="sect"><div><div class="st">Products you actually use</div><div class="sd">The brands already in your house. It shows category fit and it doubles as your pitch list.</div></div></div><div class="sect"><div><div class="st">Contact</div><div class="sd">Your email in plain text and a link to book a call. Nothing clever. Make it impossible to miss.</div></div></div></div><p class="lead">If you don't have video yet, photos do the job. Real photos of you, your space, your setup, your work. A page with five honest photos reads far better than a page with an empty section on it.</p></section>
+<section class="card" id="s19"><h2>The rules you cannot break</h2><p>Every section has to be full, and every section has to be true. There are no exceptions to this and it's the fastest way to destroy a page.</p><div class="rules"><div class="rh">The nevers</div><ul><li>Never write "past clients: none", and never leave an empty section sitting on the page.</li><li>Never place a greyed out logo of a brand you have not worked with.</li><li>Never invent a testimonial, a view count, a ROAS figure, a rate or a brand relationship.</li><li>Never label a concept in a way a brand could mistake for delivered work. Write the word concept on the card.</li><li>Never apologize on your own page. No "new creator", no "just starting out", no "looking for my first opportunity".</li><li>Never ship a section you cannot fill honestly. Cut it instead, and the page gets stronger.</li></ul></div><p>The reason for all of it is pretty simple when you think about who's reading it.</p><p>A brand manager looking at a beginner already knows you haven't performed for other brands yet, and that's exactly why the first test is $150 and not $5,000.</p><p>What they're actually deciding is whether you're worth that first test. And it comes down to six things, all six of which you already have today:</p><div class="cast"><div class="cst"><div class="cn">1</div><div class="ch">Face and delivery</div><div class="cd">Can you hold a camera and talk like a human being.</div></div><div class="cst"><div class="cn">2</div><div class="ch">Environment</div><div class="cd">What rooms, kitchens, gyms, cars, gardens and worksites do you already have access to.</div></div><div class="cst"><div class="cn">3</div><div class="ch">Category fit</div><div class="cd">What world do you already live in, and does their product live there too.</div></div><div class="cst"><div class="cn">4</div><div class="ch">Credibility</div><div class="cd">Is there a real life reason to believe you on this specific topic.</div></div><div class="cst"><div class="cn">5</div><div class="ch">Ideas</div><div class="cd">Can you come up with an angle, or do they have to spoon feed you every shot.</div></div><div class="cst"><div class="cn">6</div><div class="ch">Reliability</div><div class="cd">Will you hit the deadline and actually follow the brief.</div></div></div><p>Not one of those requires a single past client. Which is why a beginner page can be completely full, completely honest, and still get you hired.</p></section>
+<section class="card" id="s20"><h2>It starts with one video</h2><p>So don't try and build the whole thing this week.</p><p>It starts with one video. One "about me" video, filmed on your phone, where you say who you are, what you create, and who you want to create it for. That video sits at the top of your page and does more work than anything else on it, because it answers all three questions at once.</p><p>Then you add one sample a week. In a month you've got four. In three months you've got twelve, and at that point you have a real portfolio and you'll barely remember being nervous about the first one.</p><div class="dgm"><svg viewBox="0 0 900 250" role="img" aria-label="one video becomes twelve">
+<defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+<path d="M0,0 L9,4.5 L0,9 z" fill="#211B14"/></marker></defs>
+<g font-family="Caveat, cursive" fill="#211B14">
+<rect x="26" y="72" width="120" height="106" rx="14" fill="#FAF7F1" stroke="#211B14" stroke-width="2.5"/>
+<polygon points="72,104 72,146 108,125" fill="#30A05C"/>
+<text x="86" y="200" font-size="27" text-anchor="middle">1 video</text>
+<text x="86" y="60" font-size="20" text-anchor="middle" fill="#736855">this week</text>
+<path d="M170,125 C210,105 230,145 268,125" stroke="#211B14" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+<g>
+<rect x="292" y="72" width="52" height="48" rx="8" fill="#FAF7F1" stroke="#211B14" stroke-width="2.2"/>
+<rect x="352" y="72" width="52" height="48" rx="8" fill="#FAF7F1" stroke="#211B14" stroke-width="2.2"/>
+<rect x="292" y="130" width="52" height="48" rx="8" fill="#FAF7F1" stroke="#211B14" stroke-width="2.2"/>
+<rect x="352" y="130" width="52" height="48" rx="8" fill="#D4BEFF" stroke="#211B14" stroke-width="2.2"/>
+</g>
+<text x="348" y="200" font-size="27" text-anchor="middle">4 videos</text>
+<text x="348" y="60" font-size="20" text-anchor="middle" fill="#736855">one month</text>
+<path d="M428,125 C468,105 488,145 526,125" stroke="#211B14" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+<g>
+<rect x="550" y="60" width="40" height="36" rx="6" fill="#FAF7F1" stroke="#211B14" stroke-width="2"/>
+<rect x="596" y="60" width="40" height="36" rx="6" fill="#FAF7F1" stroke="#211B14" stroke-width="2"/>
+<rect x="642" y="60" width="40" height="36" rx="6" fill="#FAF7F1" stroke="#211B14" stroke-width="2"/>
+<rect x="688" y="60" width="40" height="36" rx="6" fill="#D4BEFF" stroke="#211B14" stroke-width="2"/>
+<rect x="550" y="104" width="40" height="36" rx="6" fill="#FAF7F1" stroke="#211B14" stroke-width="2"/>
+<rect x="596" y="104" width="40" height="36" rx="6" fill="#D4BEFF" stroke="#211B14" stroke-width="2"/>
+<rect x="642" y="104" width="40" height="36" rx="6" fill="#FAF7F1" stroke="#211B14" stroke-width="2"/>
+<rect x="688" y="104" width="40" height="36" rx="6" fill="#FAF7F1" stroke="#211B14" stroke-width="2"/>
+<rect x="550" y="148" width="40" height="36" rx="6" fill="#D4BEFF" stroke="#211B14" stroke-width="2"/>
+<rect x="596" y="148" width="40" height="36" rx="6" fill="#FAF7F1" stroke="#211B14" stroke-width="2"/>
+<rect x="642" y="148" width="40" height="36" rx="6" fill="#FAF7F1" stroke="#211B14" stroke-width="2"/>
+<rect x="688" y="148" width="40" height="36" rx="6" fill="#FAF7F1" stroke="#211B14" stroke-width="2"/>
+</g>
+<text x="639" y="212" font-size="27" text-anchor="middle">12 videos</text>
+<text x="639" y="46" font-size="20" text-anchor="middle" fill="#736855">three months</text>
+<text x="800" y="112" font-size="30" text-anchor="middle" fill="#30A05C">a real</text>
+<text x="800" y="146" font-size="30" text-anchor="middle" fill="#30A05C">portfolio</text>
+</g></svg><div class="cap">One a week. That is the entire strategy.</div></div></section>
+<section class="card" id="s21"><h2>So far, we've covered two things</h2><ul class="plain"><li>World class content principles that attract high paying dream brand deals</li><li>The fundamentals of a portfolio that make it so you can land your first paid brand ASAP</li></ul><p>Meanwhile, my team is building your portfolio as we speak. It takes up to 24 hours max, and sometimes it's ready in 20 minutes, depending on the time of the day.</p><p>When it's ready we'll text you the link of your first draft.</p><p>Also by the way, the coaches actually building your portfolio right now are the same coaches that speak with billion dollar companies literally everyday and help staff thousands of creators, so they know what works, what doesn't work, and the small details that make you stand out as a creator.</p><p>Your portfolio should come in 90% completed, but of course, there may be certain revisions that you'd like to suggest (or maybe it's 100% perfect), it just depends on your personal preferences. Our coaches will happily help make those revisions if needed.</p></section>
+<section class="card" id="s22"><h2>What we cover live on the workshop</h2><p>Please come prepared with the portfolio live on the workshop, where we cover:</p><ul class="plain"><li>Exactly how I pitch my portfolio to brands and the best places to find them</li><li>How I negotiate brands from single video deals into yearly brand partnerships, like Cloud 9 from $600/month to $24k/year in my first year working with them</li><li>Specific content proposals I use to retain long term clients, so that you can scale this from a side hustle into a real full-time income</li></ul><p>Remember everything in this video here is yours for the lifetime, so you can save this and come back to it. The content, the portfolio, and the entire setup here are the foundations. Me and all my top creators, the ones making 10-20k/m, all come back and use the same principles you learned today, to revise our portfolios, our content strategies, etc. . .</p><p>It's like playing a sport, once you have the basic foundations, they never leave you and they stay with you for the rest of life.</p></section>
+<section class="card close" id="s23"><p>So bring the foundation, bring your notes, and bring the questions you wrote down while you were watching this to the live workshop.</p><p class="lead">I'll see you liveeee on the workshop !!!</p><div class="sig">Gloria</div></section>
+<div id="lb"><button class="lbx">&times;</button><button class="lbn p">&#8249;</button>
+<img alt=""><div class="lbcap"></div><button class="lbn n">&#8250;</button></div>
+<script>
+/* lightbox */
+(function(){
+  const lb=document.getElementById("lb"), im=lb.querySelector("img"), cap=lb.querySelector(".lbcap");
+  let shots=[], idx=0;
+  function collect(){ shots=[...document.querySelectorAll("figure img, .pshot img")]; }
+  function show(i){ collect(); if(!shots.length) return; idx=(i+shots.length)%shots.length;
+    const s=shots[idx]; im.src=s.currentSrc||s.src; cap.textContent=s.dataset.cap||""; lb.classList.add("on"); }
+  document.addEventListener("click",e=>{
+    const t=e.target;
+    if(t.matches(".pshot img")){ e.preventDefault(); e.stopPropagation(); collect(); show(shots.indexOf(t)); return; }
+    if(t.matches("figure img")){ collect(); show(shots.indexOf(t)); }
+  },true);
+  lb.addEventListener("click",e=>{ if(e.target.classList.contains("lbn")){ show(idx+(e.target.classList.contains("n")?1:-1)); return;} lb.classList.remove("on"); });
+  addEventListener("keydown",e=>{ if(!lb.classList.contains("on"))return;
+    if(e.key==="Escape")lb.classList.remove("on"); if(e.key==="ArrowRight")show(idx+1); if(e.key==="ArrowLeft")show(idx-1); });
+})();
+/* portfolio rail arrows */
+(function(){
+  document.querySelectorAll(".prail").forEach(r=>{
+    const tr=r.querySelector(".prail-track"), p=r.querySelector(".prail-prev"), n=r.querySelector(".prail-next");
+    const step=()=>Math.max(300, tr.querySelector(".pcard")?.offsetWidth+18||480);
+    const sync=()=>{ p.disabled=tr.scrollLeft<8; n.disabled=tr.scrollLeft+tr.clientWidth>=tr.scrollWidth-8; };
+    p.onclick=()=>tr.scrollBy({left:-step(),behavior:"smooth"});
+    n.onclick=()=>tr.scrollBy({left:step(),behavior:"smooth"});
+    tr.addEventListener("scroll",sync,{passive:true}); addEventListener("resize",sync); sync();
+  });
+})();
+/* drag to scroll on both rails, without eating the click */
+(function(){
+  document.querySelectorAll(".prail-track,.crail-track").forEach(tr=>{
+    let down=false,sx=0,sl=0,moved=0;
+    tr.addEventListener("pointerdown",e=>{ if(e.pointerType==="touch")return; down=true;moved=0;sx=e.clientX;sl=tr.scrollLeft; });
+    addEventListener("pointerup",()=>{ down=false; setTimeout(()=>moved=0,0); });
+    tr.addEventListener("pointermove",e=>{ if(!down)return; const d=e.clientX-sx; moved=Math.max(moved,Math.abs(d));
+      if(moved>4){ tr.scrollLeft=sl-d; tr.style.cursor="grabbing"; } });
+    tr.addEventListener("click",e=>{ if(moved>6){ e.preventDefault(); e.stopPropagation(); } tr.style.cursor=""; },true);
+  });
+})();
+/* reading progress */
+(function(){
+  const bar=document.getElementById("bar"), prog=document.getElementById("prog");
+  const secs=[...document.querySelectorAll("section.card")];
+  function upd(){
+    const h=document.documentElement.scrollHeight-innerHeight;
+    const pct=h>0?Math.min(100,Math.max(0,scrollY/h*100)):0;
+    bar.style.width=pct+"%";
+    if(prog) prog.textContent=Math.round(pct)+"% read";
+  }
+  addEventListener("scroll",upd,{passive:true}); addEventListener("resize",upd); upd();
+})();
+</script>
+</body>
+</html>
